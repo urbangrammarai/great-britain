@@ -94,6 +94,31 @@
 
 <body style='margin:0'>
 
+    <!-- legend -->
+    <div id='maplegend signaturetype' class='maplegend'>
+        <div class='legend-title'>Spatial signature type</div>
+        <div class='legend-scale'>
+            <ul class='legend-labels'>
+                <li><span style='background:#f2e6c7'></span>Countryside agriculture</li>
+                <li><span style='background:#8fa37e'></span>Accessible suburbia</li>
+                <li><span style='background:#d7a59f'></span>Open sprawl</li>
+                <li><span style='background:#d7ded1'></span>Wild countryside</li>
+                <li><span style='background:#c3abaf'></span>Warehouse land</li>
+                <li><span style='background:#e4cbc8'></span>Gridded residential quarters</li>
+                <li><span style='background:#c2d0d9'></span>Urban buffer</li>
+                <li><span style='background:#f0d17d'></span>Disconnected suburbia</li>
+                <li><span style='background:#678ea6'></span>Dense residential neighbourhoods</li>
+                <li><span style='background:#94666e'></span>Connected residential neighbourhoods</li>
+                <li><span style='background:#efc758'></span>Dense urban neighbourhoods</li>
+                <li><span style='background:#3b6e8c'></span>Local urbanity</li>
+                <li><span style='background:#333432'></span>Distilled urbanity</li>
+                <li><span style='background:#ab888e'></span>Regional urbanity</li>
+                <li><span style='background:#bc5b4f'></span>Metropolitan urbanity</li>
+                <li><span style='background:#a7b799'></span>Hyper distilled urbanity</li>
+            </ul>
+        </div>
+    </div>
+
     <!-- div containing map -->
     <div id="map" style="width: 100vw; height: 100vh; background: #fdfdfd"></div>
 
@@ -228,32 +253,6 @@
         // add scalebar
         L.control.scale().addTo(map);
     </script>
-
-
-    <!-- legend -->
-    <div id='maplegend Spatial signature type' class='maplegend'>
-        <div class='legend-title'>Spatial signature type</div>
-        <div class='legend-scale'>
-            <ul class='legend-labels'>
-                <li><span style='background:#f2e6c7'></span>Countryside agriculture</li>
-                <li><span style='background:#8fa37e'></span>Accessible suburbia</li>
-                <li><span style='background:#d7a59f'></span>Open sprawl</li>
-                <li><span style='background:#d7ded1'></span>Wild countryside</li>
-                <li><span style='background:#c3abaf'></span>Warehouse land</li>
-                <li><span style='background:#e4cbc8'></span>Gridded residential quarters</li>
-                <li><span style='background:#c2d0d9'></span>Urban buffer</li>
-                <li><span style='background:#f0d17d'></span>Disconnected suburbia</li>
-                <li><span style='background:#678ea6'></span>Dense residential neighbourhoods</li>
-                <li><span style='background:#94666e'></span>Connected residential neighbourhoods</li>
-                <li><span style='background:#efc758'></span>Dense urban neighbourhoods</li>
-                <li><span style='background:#3b6e8c'></span>Local urbanity</li>
-                <li><span style='background:#333432'></span>Distilled urbanity</li>
-                <li><span style='background:#ab888e'></span>Regional urbanity</li>
-                <li><span style='background:#bc5b4f'></span>Metropolitan urbanity</li>
-                <li><span style='background:#a7b799'></span>Hyper distilled urbanity</li>
-            </ul>
-        </div>
-    </div>
 </body>
 
 </html>
