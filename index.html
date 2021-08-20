@@ -17,75 +17,65 @@
     <!-- load VectorGrid extension -->
     <script src="https://unpkg.com/leaflet.vectorgrid@1.3.0/dist/Leaflet.VectorGrid.bundled.js"></script>
 
-    <!-- load JS for legend -->
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
     <!-- script allowing dragging of the legend -->
-    <script>$(function () {
-            $(".maplegend").draggable({
-                start: function (event, ui) {
-                    $(this).css({
-                        right: "auto",
-                        top: "auto",
-                        bottom: "auto"
-                    });
-                }
-            });
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>$( function() {
+        $( ".maplegend" ).draggable({
+            start: function (event, ui) {
+                $(this).css({
+                    right: "auto",
+                    top: "auto",
+                    bottom: "auto"
+                });
+            }
         });
+    });
     </script>
-
-    <!-- legend styles -->
     <style type='text/css'>
-        .maplegend {
-            position: absolute;
-            z-index: 9999;
-            background-color: rgba(255, 255, 255, .8);
-            border-radius: 5px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-            padding: 10px;
-            font: 12px/14px Arial, Helvetica, sans-serif;
-            right: 10px;
-            bottom: 20px;
+      .maplegend {
+        position: absolute;
+        z-index:9999;
+        background-color: rgba(255, 255, 255, .8);
+        border-radius: 5px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        padding: 10px;
+        font: 12px/14px Arial, Helvetica, sans-serif;
+        right: 10px;
+        bottom: 20px;
+      }
+      .maplegend .legend-title {
+        text-align: left;
+        margin-bottom: 5px;
+        font-weight: bold;
         }
-
-        .maplegend .legend-title {
-            text-align: left;
-            margin-bottom: 5px;
-            font-weight: bold;
+      .maplegend .legend-scale ul {
+        margin: 0;
+        margin-bottom: 0px;
+        padding: 0;
+        float: left;
+        list-style: none;
         }
-
-        .maplegend .legend-scale ul {
-            margin: 0;
-            margin-bottom: 0px;
-            padding: 0;
-            float: left;
-            list-style: none;
+      .maplegend .legend-scale ul li {
+        list-style: none;
+        margin-left: 0;
+        line-height: 16px;
+        margin-bottom: 2px;
         }
-
-        .maplegend .legend-scale ul li {
-            list-style: none;
-            margin-left: 0;
-            line-height: 16px;
-            margin-bottom: 2px;
+      .maplegend ul.legend-labels li span {
+        display: block;
+        float: left;
+        height: 14px;
+        width: 14px;
+        margin-right: 5px;
+        margin-left: 0;
+        border: 0px solid #ccc;
         }
-
-        .maplegend ul.legend-labels li span {
-            display: block;
-            float: left;
-            height: 14px;
-            width: 14px;
-            margin-right: 5px;
-            margin-left: 0;
-            border: 0px solid #ccc;
+      .maplegend .legend-source {
+        color: #777;
+        clear: both;
         }
-
-        .maplegend .legend-source {
-            color: #777;
-            clear: both;
-        }
-
-        .maplegend a {
-            color: #777;
+      .maplegend a {
+        color: #777;
         }
     </style>
 
