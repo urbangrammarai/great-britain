@@ -20,6 +20,20 @@
     <!-- load JS for legend -->
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
+    <!-- script allowing dragging of the legend -->
+    <script>$(function () {
+            $(".maplegend").draggable({
+                start: function (event, ui) {
+                    $(this).css({
+                        right: "auto",
+                        top: "auto",
+                        bottom: "auto"
+                    });
+                }
+            });
+        });
+    </script>
+
     <!-- legend styles -->
     <style type='text/css'>
         .maplegend {
@@ -215,20 +229,6 @@
         L.control.scale().addTo(map);
     </script>
 
-    <!-- script allowing dragging of the legend -->
-    <script>
-        $(function () {
-            $(".maplegend").draggable({
-                start: function (event, ui) {
-                    $(this).css({
-                        right: "auto",
-                        top: "auto",
-                        bottom: "auto"
-                    });
-                }
-            });
-        });
-    </script>
 
     <!-- legend -->
     <div id='maplegend Spatial signature type' class='maplegend'>
