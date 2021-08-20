@@ -29,6 +29,7 @@
             font: 12px/14px Arial, Helvetica, sans-serif;
             right: 10px;
             bottom: 20px;
+            display: none;
         }
 
         .maplegend .legend-title {
@@ -83,6 +84,7 @@
             right: 10px;
             top: 20px;
             width: 480px;
+            display: none;
         }
 
         h1 {
@@ -135,19 +137,19 @@
     <script>
         function toggleTitle() {
             var x = document.getElementById("maptitle");
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            } else {
+            if (x.style.display === "block") {
                 x.style.display = "none";
+            } else {
+                x.style.display = "block";
             }
         };
 
         function toggleLegend() {
             var x = document.getElementById("maplegend signaturetype");
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            } else {
+            if (x.style.display === "block") {
                 x.style.display = "none";
+            } else {
+                x.style.display = "block";
             }
         }
     </script>
