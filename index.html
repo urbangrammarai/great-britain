@@ -19,6 +19,40 @@
 
     <!-- legend styles -->
     <style type='text/css'>
+        /* Import ET Book styles
+        adapted from https://github.com/edwardtufte/et-book/blob/gh-pages/et-book.css */
+
+        @font-face {
+            font-family: "et-book";
+            src: url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot");
+            src: url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot?#iefix") format("embedded-opentype"), url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff") format("woff"), url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.ttf") format("truetype"), url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.svg#etbookromanosf") format("svg");
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: "et-book";
+            src: url("et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.eot");
+            src: url("et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.eot?#iefix") format("embedded-opentype"), url("et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.woff") format("woff"), url("et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.ttf") format("truetype"), url("et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.svg#etbookromanosf") format("svg");
+            font-weight: normal;
+            font-style: italic;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: "et-book";
+            src: url("et-book/et-book-bold-line-figures/et-book-bold-line-figures.eot");
+            src: url("et-book/et-book-bold-line-figures/et-book-bold-line-figures.eot?#iefix") format("embedded-opentype"), url("et-book/et-book-bold-line-figures/et-book-bold-line-figures.woff") format("woff"), url("et-book/et-book-bold-line-figures/et-book-bold-line-figures.ttf") format("truetype"), url("et-book/et-book-bold-line-figures/et-book-bold-line-figures.svg#etbookromanosf") format("svg");
+            font-weight: bold;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        body {
+            font-family: sans-serif;
+        }
+
         .maplegend {
             position: absolute;
             z-index: 9999;
@@ -26,16 +60,19 @@
             border-radius: 5px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
             padding: 10px;
-            font: 12px/14px Arial, Helvetica, sans-serif;
+            font-size: 12px/14px;
             right: 10px;
             bottom: 20px;
             display: none;
+            font-family: 'et-book', serif;
         }
 
         .maplegend .legend-title {
             text-align: left;
-            margin-bottom: 5px;
-            font-weight: bold;
+            margin-bottom: 10px;
+            font-weight: 600;
+            color: #3B6E8D;
+            font-size: larger;
         }
 
         .maplegend .legend-scale ul {
@@ -50,7 +87,7 @@
             list-style: none;
             margin-left: 0;
             line-height: 16px;
-            margin-bottom: 2px;
+            margin-bottom: 6px;
         }
 
         .maplegend ul.legend-labels li span {
@@ -80,7 +117,6 @@
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
             padding: 20px;
             margin-left: 20px;
-            font-family: Arial, Helvetica, sans-serif;
             font-size: 12px;
             right: 10px;
             top: 20px;
@@ -95,7 +131,21 @@
         }
 
         h1 {
-            font-size: 15px;
+            font-size: 30px;
+            font-family: 'et-book', serif;
+            color: #3B6E8D;
+        }
+
+        h2 {
+            font-size: 25px;
+            font-family: 'et-book', serif;
+            color: #3B6E8D;
+        }
+
+        h3 {
+            font-size: 20px;
+            font-family: 'et-book', serif;
+            color: #BD5B4F;
         }
 
         div.logos {
@@ -120,7 +170,6 @@
             border-radius: 5px;
             border: 0;
             padding: 5px;
-            font-family: Arial, Helvetica, sans-serif;
             font-size: 12px;
             right: 10px;
             top: 20px;
@@ -134,7 +183,6 @@
             border-radius: 5px;
             border: 0;
             padding: 5px;
-            font-family: Arial, Helvetica, sans-serif;
             font-size: 12px;
             right: 10px;
             bottom: 20px;
@@ -181,11 +229,89 @@
                         alt="ATI" width="30%"></a>
             </div>
 
-            Few lines about what it is.
+            Few lines about what it is. Links to website and papers and CDRC. Pen portraits.
 
-            Links to website and papers and CDRC.
-
-            Pen portraits.
+            <h2>Pen portraits</h2>
+            <h3>Wild countryside</h3>
+            The wild countryside is a type where human influence is the least intensive. It covers large open spaces in
+            the countryside where no urbanisation happens apart from occasional roads, cottages, and pastures. You can
+            find it across the Scottish Highlands,
+            numerous national parks as Lake District or in a majority of Wales.
+            <h3>Countryside agriculture </h3>
+            A signature type called Countryside agriculture is typical for the English countryside with a high degree of
+            agriculture covering both fields and pastures. There are few buildings scattered across the area, but it is
+            essentially a green space.
+            <h3>Urban buffer </h3>
+            Urban buffer can be characterised as a green belt around cities. It covers mostly agricultural land in the
+            immediate adjacency of towns and cities, often including development on their edges. It is still more
+            countryside than a city, but its scale is
+            much smaller compared to other countryside types.
+            <h3>Open sprawl </h3>
+            Open sprawl is a transition between countryside and urbanised land. It is located on the outskirts of cities
+            and has typically a large open space area intertwined with different kinds of development from highways to
+            smaller neighbourhoods.
+            <h3>Disconnected suburbia </h3>
+            Disconnected suburbia reflects residential developments on the outskirts of cities or even towns and
+            villages with convoluted, disconnected street networks, low built-up and population densities and lack of
+            jobs and services. This signature type is entirely
+            car-dependent.
+            <h3>Accessible suburbia </h3>
+            Accessible suburbia covers residential development on the urban periphery with a relatively legible and
+            connected street network, albeit less than more urban signature types. It has low density, both in terms of
+            population and built-up area, lack of jobs
+            and services and is very much serving as a place to sleep.
+            <h3>Warehouse land </h3>
+            Warehouse land covers predominantly industrial areas and other work-related developments made of large
+            box-like buildings. It contains a lot of jobs of a manual nature as manufacturing or construction and very
+            little population compared to the rest of
+            urban areas.
+            <h3>Gridded residential quarters </h3>
+            Gridded residential quarters are areas typical with street networks forming a well connected grid-like
+            pattern, resulting in smaller blocks and higher granularity of places. This type is mostly residential but
+            includes some services and jobs, though it
+            tends to be further away from city centres.
+            <h3>Connected residential neighbourhoods </h3>
+            Connected residential neighbourhoods are relatively dense urban areas, both in terms of population and
+            built-up area, that tend to be formed around a well-connected street network. They have access to services
+            and some jobs but may be further away from
+            city centres leading to a higher dependency on cars and public transport.
+            <h3>Dense residential neighbourhoods </h3>
+            A dense residential neighbourhood is an abundant signature type often covering large parts of cities outside
+            of their centres. It is typical with residential nature and high population density, varied street network
+            patterns, and some services and jobs
+            but not in the large intensity.
+            <h3>Dense urban neighbourhoods </h3>
+            Dense urban neighbourhoods are areas of inner-city with high population and built-up density of a
+            predominantly residential nature but with direct access to jobs and services. This signature type tends to
+            be relatively walkable and, in the case of small
+            towns, may even form their centres.
+            <h3>Local urbanity </h3>
+            Local urbanity reflects town centres, outer parts of city centres or even district centres. In any case,
+            this signature type is very much urban, combining high population and built-up density, access to amenities
+            and jobs. Yet, it is on the lower end
+            of the hierarchy of signature types denoting urban centres with a local significance.
+            <h3>Regional urbanity </h3>
+            Regional urbanity captures centres of mid-size cities with regional importance as Liverpool, Plymouth or
+            Newcastle upon Tyne. It is often encircled by a Local urbanity signature type and can form outer rings of
+            city centres of large cities. It brings
+            high population density, a high amount of jobs and amenities within a walkable distance.
+            <h3>Metropolitan urbanity </h3>
+            Signature type Metropolitan urbanity captures centres of the largest cities in Great Britain like Glasgow,
+            Birmingham or Manchester. It is characterised by a very high number of jobs in the area, high built-up
+            density and often high population density.
+            This type serves as centres of the whole metropolitan areas.
+            <h3>Distilled urbanity </h3>
+            Distilled urbanity is a signature type formed in the city centre of London and nowhere else. It reflects the
+            uniqueness of London in the British context with an extremely high number of jobs and amenities located at
+            one place and related high built-up
+            and population densities. Its buildings are large, closely packed, forming complex shapes full of courtyards
+            and very little green space.
+            <h3>Hyper distilled urbanity </h3>
+            The epitome of urbanity in the British context. Hyper distilled urbanity is a signature type present in one
+            place only – the centre of London around the Soho district, covering Oxford and Regent streets. This type is
+            a result of the urban pressure city
+            like London applies to its core over centuries, with a multitude of historical layers, very high built-up
+            and population density, and abundance of services and jobs.
         </div>
     </div>
 
