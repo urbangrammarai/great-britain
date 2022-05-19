@@ -17,6 +17,10 @@
     <!-- load VectorGrid extension -->
     <script src="https://unpkg.com/leaflet.vectorgrid@1.3.0/dist/Leaflet.VectorGrid.bundled.js"></script>
 
+    <!-- load locate plugin -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.76.1/dist/L.Control.Locate.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.76.1/dist/L.Control.Locate.min.js" charset="utf-8"></script>
+
     <!-- legend styles -->
     <style type='text/css'>
         /* Import ET Book styles
@@ -475,6 +479,9 @@
 
         // add scalebar
         L.control.scale().addTo(map);
+
+        // add locate
+        L.control.locate().addTo(map);
     </script>
 
     <!-- legend -->
