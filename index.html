@@ -365,6 +365,7 @@
             maxZoom: maxZoom,
             zoomControl: true,
             zoom: params.zoom || 12,
+            tap: false,
         });
 
         // add background basemap
@@ -481,7 +482,7 @@
         L.control.scale().addTo(map);
 
         // add locate
-        // L.control.locate().addTo(map);
+        L.control.locate().addTo(map);
     </script>
 
     <!-- legend -->
